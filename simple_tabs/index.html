@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roadmap.sh Tabs Project</title>
+    <link rel="stylesheet" href="styles.css"> <!--hook up the CSS-->
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="tabs-bar">
+            <!--button data target set equal to tabcontent ID to associate them in our script-->
+            <button type="button" class="tab-button" data-target="tab1">First Tab</button>
+            <button type="button" class="tab-button" data-target="tab2">Second Tab</button>
+            <button type="button" class="tab-button" data-target="tab3">Third Tab</button>
+            <button type="button" class="tab-button" data-target="tab4">Fourth Tab</button>
+        </div>
+
+        <div class="tab-info-text">
+            <p>Clicking each tab should hide the content of the other tab and show the content of clicked tab. By default, enable the first tab.</p>
+        </div>
+
+        <div class="tab-content-holder">
+            <div class="tab-content-background">
+                <div id="tab1" class="tab-content">
+                    <p class="tab-content-style">First Tab content to be displayed here</p>
+                </div>
+                <div id="tab2" class="tab-content">
+                    <p class="tab-content-style">Second Tab content to be displayed here</p>
+                </div>
+                <div id="tab3" class="tab-content">
+                    <p class="tab-content-style">Third Tab content to be displayed here</p>
+                </div>
+                <div id="tab4" class="tab-content">
+                    <p class="tab-content-style">Fourth Tab content to be displayed here</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="tab-info-text">
+            <p>Add some dummy content or just add a simple text showing the tab</p>
+        </div>
+
+
+    </div>
+    
+    <script src="scripts.js" defer></script> <!--hook up the JS, defer ensures sript runs only after HTML is fully parsedt-->
+</body>
+</html>
