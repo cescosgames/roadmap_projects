@@ -1,15 +1,13 @@
 # roadmap Changelog Component
-In this project, we were required to create a simple component for a website that displays a changelog.
-The goal was to enhance positiong and layout skills in just html/css
+In this project, we were required to create a single page CV using only HTML. Key requirements were: Semantic HTML, SEO Meta Tags, OG Tags, Favicon
 
 ## How it was made:
 
-**Tech used:** HTML, CSS
+**Tech used:** HTML
 
-Same approach as usual with these projects, get all content necessary for the project in simple HTML then style it using CSS.
-This was the first time I was lining items up off center and seeing all the different approaches to the 'timeline line' was fun.
+Since this was just HTML this was mainly looking at the image and writing out the content and assigning the correct semantic categories.
 
 ## Lessons Learned:
 
-Lots of different ways to reach the same result in CSS and learned about creative ways to create visuals to convey information like the 
-timeline itself
+Fun project styling things without CSS. Learned about accessibility and the use/importance of semantic tags as well as how to use 
+OG tags and SEO meta tags more effectively.
