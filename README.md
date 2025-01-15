@@ -1,5 +1,7 @@
-# roadmap_projects
-These are my solutions to the roadmap.sh projects, thanks roadmap.sh!
+# Roadmap Projects
+These are my takes on the roadmap.sh projects, thanks roadmap.sh!
+
+## Project List
 
 first project (single page CV): https://roadmap.sh/projects/single-page-cv
 <br>
