@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML only no styling</title>
+    <!--SEO Meta tags-->
+    <!--Meta Description, describe the page-->
+    <meta name="Description" content="html only with proper layout, no styling site">
+    <!--keywords-->
+    <meta name="keywords" content="HTML, frontend development">
+    <!--authorship-->
+    <meta name="author" content="Cesco (my name)">
+    <!--can also do OG (for socials) and twitter-->
+</head>
+<body>
+    <!--Remember semantic HTML only-->
+    <!--header section-->
+    <header>
+        <table width="100%" border="1">
+            <tr> <!--table row-->
+                <td> <!--table data left side, aka logo-->
+                    <h3>Cesco (my name)</h3>
+                </td>
+                <td align="right"> <!--right side, aka navigation-->
+                    <a href="index.html">Home</a>
+                </td>
+                <td align="right"> <!--right side, aka navigation-->
+                    <a href="projects.html">Projects</a>
+                </td>
+                <td align="right"> <!--right side, aka navigation-->
+                    <a href="articles.html">Articles</a>
+                </td>
+                <td align="right"> <!--right side, aka navigation-->
+                    <a href="contact.html">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!--the title area-->
+    <h1 align="center">Contact</h1>
+    <h4 align="center">example contact form, HTML only</h6>
+
+    <!--the body-->
+    <main>
+        <form action="" method="get"></form>
+        <p>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="First" required="true">
+        </p>
+        <p>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="firstname" placeholder="Last" required="true">
+        </p>
+        <p>
+            <label for="message">Your Message</label>
+            <textarea name="" id="message" placeholder="Send me a note"></textarea>
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
+        <p>
+            NOTE: this form does not submit anything, purely visual
+        </p>
+    </main>
+
+    <!--footer-->
+    <footer align="center" width="">
+        <table width="100%">
+            <td align="center">
+                <em>this is the footer</em>
+            </td>
+        </table>
+    </footer>
+    
+</body>
+</html>
