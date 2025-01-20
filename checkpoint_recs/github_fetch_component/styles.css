@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.wrap {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    max-width: 768px;
+
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.mainButt {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    color: whitesmoke;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.mainButt:hover {
+    background-color: salmon;
+    color: black;
+    border: 2px solid salmon;
+
+    transition: 0.2s;
+}
+
+.outputs-holder {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-output {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 0.5rem;
+    width: 50%;
+    border: 2px solid white;
+}
+
+.outputText {
+    color: white;
+}
+
+.githubInputField {
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+}

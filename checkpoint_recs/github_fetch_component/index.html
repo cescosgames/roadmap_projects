@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Fetch roadmap Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>GitHub Bio Fetcher</h1>
+            <p>Enter a GitHub users username to fetch their bio!</p>
+        </div>
+
+        <div class="inside">
+            <div>
+                <input class="githubInputField" type="text" id="githubURL" placeholder="Enter GitHub Username">
+            </div>
+
+
+            <!--this was for learning purposes below, see js file for information-->
+            <!--when do you use form vs input? Lots of good answers online-->
+            <!--succinctly, forms are better for more structured, and multiple input data - input is better for simpler interactions-->
+            <!-- <form id="addAPI">
+                <div>
+                    <input type="text" id="title" placeholder="Title">
+                </div>
+                <div>
+                    <textarea id="body" placeholder="Body"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form> -->
+        </div>
+
+        <div class="inside">
+            <button class="mainButt" id="getProfileButton">Fetch GitHub Bio</button>
+            
+            <!--this was for learning purposes below, see js file for information-->
+            <!-- <button class="mainButt" id="getText">Get Profile</button>
+            <button class="mainButt" id="getUsers">Get Users</button>
+            <button class="mainButt" id="getAPI">Add Post (API practice)</button> -->
+        </div>
+
+        <div class="outputs-holder">
+            <div class="main-output">
+                <p class="outputText" id="output"></p>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
