@@ -1,0 +1,383 @@
+/* setting up colors for CSS only dark mode */
+:root { 
+    color-scheme: dark light;
+    --color-text: #222222;
+    --color-background: #eeeeee;
+    /* salmon */
+    --color-highlights: #FA8072 ;
+    /* blue */
+    --color-bluelink: #0059b3;
+    /* gray vs light gray */
+    --color-graybox: #dddddd;
+    /* text highlighting */
+    --color-texthighlight: #eeeeee;
+}
+
+body {
+    /* background-color: whitesmoke;
+    color: black; */
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: Roboto;
+    font-size: 0.75rem;
+}
+
+.wrap {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    max-width: 768px;
+}
+
+
+/* Nav Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.leftNav {
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    gap: 1rem;
+
+    a {
+        text-decoration: none;
+        color: var(--color-text);
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            color: #FA8072;
+            
+        }
+    }
+
+    .profilePic {
+        width: 25px;
+        height: 25px;
+        background-color: var(--color-text);
+        border-radius: 5px;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: var(--color-highlights);
+        }
+    }
+}
+
+.rightNav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: 0.2s;
+
+    a {
+        text-decoration: none;
+        color: var(--color-text);
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-highlights);
+            transition: 0.2s;
+        }
+    }
+
+    p {
+        font-weight: 800;
+    }
+}
+
+
+/* Title Section */
+.titleArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    text-align: center;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.subtext {
+    color: var(--color-text);
+    opacity: 0.5;
+}
+
+
+/* THIS IS TOUGH TO STYLE, COMING BACK LATER */
+/* Bento Section */
+.bentoArea {
+    margin-top: 5%;
+
+    border-top: 2px solid var(--color-text);
+    border-bottom: 2px solid var(--color-text);
+    
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+
+    height: fit-content;
+}
+
+.leftBento {
+    border-right: 2px solid var(--color-text);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bentoHeader {
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+.leftBentoItemHolder {
+    border-top: 2px solid var(--color-text);
+}
+
+.leftBentoItemHolder:nth-child(2) {
+    border-top: 2px solid var(--color-text);
+}
+
+.leftBentoItem {
+    padding: 1rem;
+
+    a {
+        text-decoration: none;
+        color: var(--color-text);
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-highlights);
+            transition: 0.2s;
+        }
+    }
+}
+
+.centerBento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.centerTopBento {
+    height: 80%;
+}
+
+.centerBotBento {
+    border-top: 2px solid var(--color-text);
+    height: 100%;
+}
+
+.centerBentoContent {
+    padding: 1rem;
+
+    a {
+        text-decoration: none;
+        color: var(--color-text);
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-highlights);
+            transition: 0.2s;
+        }
+    }
+
+    .highlightLink {
+        color: var(--color-bluelink);
+    }
+}
+
+.rightBento {
+    border-left: 2px solid var(--color-text);
+}
+
+.rightBentoItem {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* stlying the list */
+ul {
+    margin-bottom: 10%;
+}
+ul li {
+    margin: 10px 0;
+}
+ul.dashed {
+    list-style-type: none;
+}
+ul.dashed > li:before {
+    display: inline-block;
+    content: "-";
+    text-indent: -5px;
+    margin-left: -3em;
+}
+
+
+
+
+/* Review Section */
+.reviewSection {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.reviewBox {
+    border: 1px solid var(--color-text);
+    border-radius: 20px;
+    padding: 1rem;
+    width: 100%;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: var(--color-highlights);
+        color: var(--color-background);
+    }
+}
+
+
+/* Footer section */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+/* mobile design */
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: var(--color-background);
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .titleArea {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .bentoArea {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftBento {
+        border: none;
+        text-align: center;
+    }
+
+    .leftBentoItemHolder {
+        background-color: var(--color-graybox);
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--color-highlights);
+        }
+    }
+
+    .leftBentoItemHolder:nth-child(2) {
+        border-top: 2px solid var(--color-text);
+        background-color: var(--color-graybox);
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--color-highlights);
+        }
+    }
+
+    .leftBentoItemHolder:nth-child(6) {
+        border-top: 2px solid var(--color-text);
+        border-bottom: 2px solid var(--color-text);
+        background-color: var(--color-graybox);
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--color-highlights);
+        }
+    }
+
+    .leftBentoItem {
+        a {
+            &:hover {
+                color: var(--color-texthighlight);
+            }
+        }
+    }
+
+    .centerBento {
+        text-align: center;
+    }
+
+    .centerBentoContent {
+        text-align: left;
+        background-color: var(--color-background);
+        border-top: 2px solid var(--color-text);
+    }
+
+    .centerBotBento {
+        border-bottom: 2px solid var(--color-text);
+    }
+
+    .rightBento {
+        border-left: none;
+    }
+
+    ul.dashed > li:before {
+        display: inline-block;
+        content: "-";
+        text-indent: 10px;
+    }
+
+    .reviewSection {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .reviewBox:nth-child(2) {
+        display: none;
+    }
+
+    .reviewBox:nth-child(3) {
+        display: none;
+    }
+}  
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: #eeeeee;
+        --color-background: #222222;
+        /* salmon */
+        --color-highlights: #FA8072;
+        /* blue */
+        --color-bluelink: #87cefa;
+        /* gray vs light gray */
+        --color-graybox: #333333;
+        /* text highlighting */
+        --color-texthighlight: #222222;
+    }
+}
