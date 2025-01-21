@@ -1,4 +1,4 @@
-# roadmap Changelog Component
+# roadmap Fetch Component
 At this checkpoint, we were asked to create a simple webpage where a user can input anyone's GitHub username and see their profile information using GitHubs API.
 
 ## How it was made:
