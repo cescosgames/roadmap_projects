@@ -12,6 +12,9 @@ These are my takes on the roadmap.sh projects, thanks roadmap.sh!
 4 (changelog component): https://roadmap.sh/projects/changelog-component
 <br>
 5 (Basic HTML only site): https://roadmap.sh/projects/basic-html-website
+<br>
+<hr>
+6 (HTml and CSS only portfolio): https://roadmap.sh/projects/portfolio-website
 
 ### Checkpoint projects
 
