@@ -13,8 +13,9 @@ These are my takes on the roadmap.sh projects, thanks roadmap.sh!
 <br>
 5 (Basic HTML only site): https://roadmap.sh/projects/basic-html-website
 <br>
-<hr>
 6 (HTml and CSS only portfolio): https://roadmap.sh/projects/portfolio-website
+
+<hr>
 
 ### Checkpoint projects
 
