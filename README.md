@@ -1,7 +1,7 @@
 # Roadmap Projects
 These are my takes on the roadmap.sh projects, thanks roadmap.sh!
 
-## Project List
+## Project List (in order of completion)
 
 1 (single page CV): https://roadmap.sh/projects/single-page-cv
 <br>
@@ -13,7 +13,9 @@ These are my takes on the roadmap.sh projects, thanks roadmap.sh!
 <br>
 5 (Basic HTML only site): https://roadmap.sh/projects/basic-html-website
 <br>
-6 (HTml and CSS only portfolio): https://roadmap.sh/projects/portfolio-website
+6 (HTML and CSS only portfolio): https://roadmap.sh/projects/portfolio-website
+<br>
+7 (Image Grid Layout https://roadmap.sh/projects/image-grid
 
 <hr>
 
