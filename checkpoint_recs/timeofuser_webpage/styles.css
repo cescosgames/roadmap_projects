@@ -1,0 +1,74 @@
+* {
+    --background-color: #222222;
+    --alternate-color: #dddddd;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--alternate-color);
+
+    font-family: sans-serif;
+}
+
+.wrap {
+    margin-top: 5%;
+    max-width: 500px;
+    margin-inline: auto;
+
+    /* border: 1px solid red; */
+}
+
+.titlebox {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+    text-align: left;
+
+    border-top: 1px solid var(--alternate-color);
+    border-left: 1px solid var(--alternate-color);
+    padding: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.subtext {
+    font-size: 0.75rem;
+    opacity: 50%;
+}
+
+.clockBody {
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.clockInside {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: right;
+    gap: 10px;
+    
+    padding: 1rem;
+    border-right: 1px solid var(--alternate-color);
+    border-bottom: 1px solid var(--alternate-color);
+}
+
+.usersTimeZone {
+    opacity: 50%;
+    font-size: 0.75rem;
+}
+
+.clockNumbers {
+    font-size: 1.5rem;
+}
+
+.dateText {
+    font-size: 0.75rem;
+}

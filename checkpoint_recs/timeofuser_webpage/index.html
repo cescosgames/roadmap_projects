@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Local Time</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <!-- <script src="bundle.js"></script> -->
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="titlebox">
+            <div class="title">Your Local Time</div>
+            <div class="subtext">this is a roadmap.sh project using dayjs to practice npm</div>
+            <div class="subtext">this project uses dayjs for time formatting and browserify for module bundling</div>
+        </div>
+
+        <div class="clockBody">
+            <div class="clockInside">
+                <div class="usersTimeZone" id="userZone">xxx/yyy</div>
+                <div class="clockNumbers" id="clockNum">xx:xx:xx</div>
+                <div class="dateText" id="dateTxt">xx, xx, xx</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- connect our dayjs script first, so our js can use it -->
+    <!-- <script src="node_modules/dayjs/dayjs.min.js"></script> this is the old way of doing it, modern way requires bundling-->
+    <script src="bundle.js"></script>
+</body>
+</html>
