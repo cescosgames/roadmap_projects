@@ -1,0 +1,213 @@
+* {
+    --color-background: #eeeeee;
+    --color-text: #111111;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: sans-serif;
+}
+
+.wrap {
+    max-width: 768px;
+    margin-inline: auto;
+    margin-top: 5%;
+}
+
+.testimonialRow {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.testimonialBox {
+    width: 50%;
+    /* border: 1px solid green; */
+    padding: 1rem;
+}
+
+.wordBubble {
+    background-color: var(--color-text);
+    color: var(--color-background);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    border-radius: 20px;
+
+    line-height: 150%;
+}
+
+.triangleDown {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+
+.bottomBubble {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5%;
+}
+
+.profileBubble img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.nameBox {
+    line-height: 150%;
+}
+
+.headerText {
+    font-size: 1.25rem;
+}
+
+.subtext {
+    font-size: 0.75rem;
+}
+
+.wordHolder {
+    display: flex;
+    line-height: 150%;
+    font-size: 1.25rem;
+}
+
+.testimonialBoxTwo {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.testimonialRowTwo {
+    margin-top: 1rem;
+    display: flex;
+    gap: 20px;
+
+    /* border: 1px solid lime; */
+}
+
+.bigImageHolder {
+    width: 35%;
+
+    /* border: 1px solid red; */
+
+    img {
+        width: 100%;
+        height: 78%; /* I'm sorry for this */
+        object-fit: cover;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+.bigCard {
+    height: 100%;
+    width: 65%;
+    background-color: var(--color-text);
+    color: var(--color-background);
+    border-radius: 20px;
+
+    /* border: 1px solid red; */
+    padding: 2rem;
+}
+
+.starHolder {
+    margin-bottom: 3%;
+    font-size: 1.25rem;
+}
+
+.bigTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.bigsubText {
+    opacity: 50%;
+    margin-bottom: 2rem;
+}
+
+.bigWordHolder {
+    font-size: 1.25rem;
+}
+
+.testimonialRowThree {
+    border: 2px solid var(--color-text);
+    border-radius: 20px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mainParagraph {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 3%;
+    line-height: 150%;
+    font-size: 1rem;
+}
+
+.scroller {
+    /* border: 1px solid lime; */
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fadeImage {
+    
+    img {
+        opacity: 50%;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+}
+
+.selectedImage {
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border: 50px;
+        border-radius: 50px;
+    }
+}
+
+.scrollertop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.bottomText {
+    margin-bottom: 3%;
+}
