@@ -16,6 +16,8 @@ These are my takes on the roadmap.sh projects, thanks roadmap.sh!
 6 (HTML and CSS only portfolio): https://roadmap.sh/projects/portfolio-website
 <br>
 7 (Image Grid Layout): https://roadmap.sh/projects/image-grid
+<br>
+8 (Testimonial Cards): https://roadmap.sh/projects/testimonial-cards
 
 <hr>
 
