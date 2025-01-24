@@ -1,0 +1,270 @@
+* {
+    --color-main: #222222;
+    --color-alt: #eeeeee;
+    --color-highlight: #666666;
+}
+
+body {
+    background-color: var(--color-main);
+    color: var(--color-alt);
+    font-family: sans-serif;
+}
+
+.wrap {
+    max-width: 768px;
+    margin-inline: auto;
+
+    margin-top: 5%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 25px;
+}
+
+.header {
+
+  max-width: 50%;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.subtext {
+  opacity: 50%;
+  line-height: 150%;
+}
+
+.clockBody {
+    border: 2px solid var(--color-alt);
+    border-radius: 20px;
+    /* margin: 2rem;
+    padding: 2rem; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 50%;
+}
+
+.clockInterior {
+    /* border: 1px solid red; */
+
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 80%;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.timezoneText {
+    opacity: 50%;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    align-items: center;
+
+    button {
+        border: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    margin-bottom: -10px;
+}
+
+.currentTimeText {
+    font-size: 2.5rem;
+}
+
+.currentDateText {
+    font-size: 0.75rem;
+}
+
+/* designing the dropdown menu */
+.dropDown {
+  width: 30vw;
+  min-width: 30vw;
+}
+
+.selected {
+  background-color: var(--color-highlight);
+  color: var(--color-alt);
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--color-alt);
+  border-radius: 5px;
+  padding: 3%;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.dropdownOptions {
+  list-style: none;
+  padding: 0.5rem;
+  background-color: var(--color-highlight);
+  border: 2px solid var(--color-alt);
+  border-radius: 5px;
+
+  position: absolute;
+  min-width: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  display: none;
+  transition: 0.2s;
+}
+
+.dropdownOptions li {
+  cursor: pointer;
+  padding: 2%;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--color-alt);
+    color: var(--color-main);
+
+    &.selectedOp {
+      color: salmon;
+    }
+  }
+}
+
+.selectedOp {
+  color: salmon;
+}
+
+.menu-open {
+  display: block;
+}
+
+
+/* modal design below from creator of modal */
+
+.modal {
+    display: none;
+  }
+  
+  .modal.is-open {
+    display: block;
+  }
+
+
+  .modal {
+    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  }
+  
+  .modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal__container {
+    background-color: var(--color-main);
+    padding: 30px;
+    max-width: 500px;
+    max-height: 100vh;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: 2px solid var(--color-alt);
+    border-radius: 10px;
+  }
+  
+  .modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: var(--color-alt);
+    box-sizing: border-box;
+  }
+  
+  .modal__close {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: var(--color-alt);
+  }
+  
+  .modal__header .modal__close:before { content: "\2715"; }
+  
+  .modal__content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: var(--color-alt);
+  }
+  
+  .modal__btn {
+    font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: var(--color-alt);
+    color: rgba(0,0,0,.8);
+    border-radius: .25rem;
+    border-style: none;
+    border-width: 0;
+    cursor: pointer;
+    /* -webkit-appearance: button; */
+    text-transform: none;
+    overflow: visible;
+    line-height: 1.15;
+    margin: 0;
+    will-change: transform;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: -webkit-transform .25s ease-out;
+    transition: transform .25s ease-out;
+    transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+  }
+  
+  .modal__btn:focus, .modal__btn:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  
+  .modal__btn-primary {
+    background-color: var(--color-alt);
+    color: var(--color-main);
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrap {
+      flex-direction: column;
+    }
+    
+  }

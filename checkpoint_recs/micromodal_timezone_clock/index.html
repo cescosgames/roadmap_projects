@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Project with Micromdal Timezone Drop Down</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="wrap">
+
+      <div class="header">
+        <h1>This is a clock that allows you to switch timezones</h1>
+        <div class="subtext">
+          this was a project from roadmap.sh I made using dayjs and micromodal to practice using dependencies and packages using simple link and script tags in html (no bundlers).
+        </div>
+      </div>
+
+        <div class="clockBody">
+            <div class="clockInterior">
+                <div class="timezoneText">
+                    <p id="userZone">Europe/London</p>
+                    <button class="changeButt" id="changeButt"></button>
+                </div>
+                <div class="currentTimeText" id="clockNum">00:00:00</div>
+                <div class="currentDateText" id="dateTxt">Monday, 1 January, 2000</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- the micromodal html -->
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+              <h2 class="modal__title" id="modal-1-title">
+                Select Timezone
+              </h2>
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <!-- designing a dropdown menu inside our modal -->
+              <div class="dropDown">
+                <div class="dropdownClickArea">
+                  <span class="selected">America/New_York</span>
+                  <!-- <div class="carrot"></div> -->
+                </div>
+                <ul class="dropdownOptions">
+                  <li class="listOption selectedOp" id="listOption">America/New_York</li>
+                  <li class="listOption" id="listOption">Europe/London</li>
+                  <li class="listOption" id="listOption">Asia/Taipei</li>
+                  <li class="listOption" id="listOption">Australia/Brisbane</li>
+                  <li class="listOption" id="listOption">Indian/Chagos</li>
+                </ul>
+              </div>
+
+              <!-- <p>
+                Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+              </p> -->
+            </main>
+            <footer class="modal__footer">
+              <!-- <button class="modal__btn modal__btn-primary">Continue</button> -->
+              <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="./node_modules/dayjs/dayjs.min.js"></script>
+    <script src="./node_modules/dayjs/plugin/utc.js"></script>
+    <script src="./node_modules/dayjs/plugin/timezone.js"></script>
+    <script src="node_modules/micromodal/dist/micromodal.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
