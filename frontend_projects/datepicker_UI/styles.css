@@ -1,0 +1,135 @@
+* {
+    --color-main: #222222;
+    --color-alt: #eeeeee;
+}
+
+body {
+    background-color: var(--color-main);
+    color: var(--color-alt);
+    font-family: sans-serif;
+}
+
+.wrap {
+    width: 500px;
+    height: 500px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    /* border: 1px solid var(--color-alt); */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+        font-size: 2rem;
+        color: var(--color-alt);
+    }
+}
+
+.subtext {
+    opacity: 80%;
+}
+
+.calendarHolder {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-alt);
+}
+
+.dateInputHolder {
+    display: flex;
+    border: 1px solid var(--color-alt);
+}
+
+.icon {
+    width: 20%;
+    height: 22px;
+    background-color: var(--color-alt);
+    cursor: pointer;
+}
+
+input {
+    width: 80%;
+    border: none;
+    height: 20px;
+    background-color: var(--color-main);
+    color: var(--color-alt);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:invalid {
+    /* invalid is built in, works alongside the required and pattern tag. If the input is required and matches the pattern it will activate these classes */
+    color: tomato;
+}
+
+input:valid {
+    color: lime;
+}
+
+.daysGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 6 columns of equal width */
+    grid-template-rows: repeat(6, 1fr);   /* 7 rows of equal height */
+}
+
+.daysGrid :nth-child(-n+7) { /* nth child is very powerful, in this case we are subtracting all nth children starting from the 7th element */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.dateBox {
+    height: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-alt);
+
+    cursor: pointer;
+}
+
+.calendarTopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.leftArrow {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right: 10px solid var(--color-alt); 
+
+    cursor: pointer;
+}
+
+.rightArrow {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+    border-left: 10px solid var(--color-alt);
+
+    cursor: pointer;
+}
