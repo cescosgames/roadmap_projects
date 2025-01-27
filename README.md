@@ -1,5 +1,5 @@
 # Roadmap Projects
-These are my takes on the roadmap.sh projects, thanks roadmap.sh!
+Hello! This repository features my takes on some of the projects found on roadmap.sh <br> Projects can be found by title in their respective category folder.
 
 ## Project List (in order of completion)
 
@@ -25,5 +25,5 @@ These are my takes on the roadmap.sh projects, thanks roadmap.sh!
 
 ### Checkpoint projects
 
-At each checkpoint, there are checkpoint practice projects. Since roadmap doesn't track these, I have been doing some of them and 
-tracking them myself in the checkpoint_projects folder.
+At each roadmap checkpoint, there are checkpoint practice projects. These aren't officially tracked as projects by roadmap, but you can find my solutions to the checkpoint projects
+found in the 'Full Stack Developer' roadmap in the folder titled checkpoint_recs. 
