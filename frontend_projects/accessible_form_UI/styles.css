@@ -1,0 +1,160 @@
+* {
+    --color-main: #FAFAFA;
+    --color-alt: #000000;
+    --color-highlight: #333333;
+    --color-accessibleRed: #FF4136;
+    --color-contrastBlue: #005FCC;
+
+    &:focus {
+        outline: 3px solid var(--color-contrastBlue);
+    }
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color-main);
+    color: var(--color-alt);
+}
+
+.wrap {
+    min-width: 500px;
+    min-height: 300px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 3px solid var(--color-alt);
+    border-radius: 20px;
+
+    padding: 2rem;
+    gap: 30px;
+}
+
+.inputSection {
+    /* border: 2px dotted var(--color-alt); */
+    height: 100%;
+    width: 55%;
+}
+
+.progressSection {
+    height: 100%;
+    width: 45%;
+    /* border: 2px dotted var(--color-alt); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputHolder {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 5px;
+    padding-bottom: 1rem;
+
+    label {
+        font-size: 1rem;
+    }
+
+    input {
+        color: var(--color-alt);
+        background-color: var(--color-main);
+        border: 2px solid var(--color-alt);
+        border-radius: 5px;
+        height: 25px;
+        width: 95%;
+    }
+
+    button {
+        height: 15px;
+        width: 15px;
+        border: none;
+        border-radius: 15px;
+        
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-80%, -30%);
+
+        cursor: pointer;
+        background-color: var(--color-alt);
+    }
+}
+
+.inputErrText {
+    margin-top: 0.5rem;
+    padding: 0;
+    color: var(--color-accessibleRed);
+    font-size: 0.75rem;
+    display: none;
+    margin-bottom: 0;
+}
+
+.active {
+    display: block;
+}
+
+.updateButt {
+    background-color: var(--color-alt);
+    color: var(--color-main);
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.progressCircle {
+    background-color: var(--color-alt);
+    border-radius: 50px;
+    color: var(--color-main);
+    height: 75px;
+    width: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.percentage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.checklistHolder {
+    background-color: var(--color-highlight);
+    border-radius: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.75rem;
+    width: 80%;
+    height: 200px;
+
+    p {
+        color: var(--color-main);
+    }
+}
+
+.checked {
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+    opacity: 80%;
+}

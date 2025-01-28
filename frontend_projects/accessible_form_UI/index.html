@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: Brief description of the page -->
+    <meta name="description" content="A practice project from roadmap.sh">
+    <!-- SEO: Keywords -->
+    <meta name="keywords" content="HTML, CSS, Design">
+    <!-- Author information -->
+    <meta name="author" content="Cesco">
+    <title>Accessible Form UI Project (design only, no functionality)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="inputSection">
+            <div class="inputHolder">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="What should we call you?" required maxlength="15" aria-required="true">
+                <!-- <button class="viewPWButt" id="viewPWButt"></button> -->
+                <p class="inputErrText">Name is already taken</p>
+            </div>
+            <div class="inputHolder">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="ex. xxx@yyy.com" required maxlength="15" aria-required="true" aria-invalid="true">
+                <!-- <button class="viewPWButt" id="viewPWButt"></button> -->
+                <p class="inputErrText active">Email is already taken</p>
+            </div>
+            <div class="inputHolder">
+                <label for="password">Enter Password</label>
+                <input type="text" id="password" name="password" placeholder="xxxxxx" required maxlength="15" aria-required="true">
+                <button class="viewPWButt" id="viewPWButt" aria-label="toggle display password" aria-checked="false"></button>
+                <p class="inputErrText">Password is already taken</p>
+            </div>
+            <div class="inputHolder">
+                <label for="confirmPW">Confirm Password</label>
+                <input type="text" id="confirmPW" name="confirmPW" placeholder="xxxxxx" required maxlength="15" aria-required="true">
+                <button class="viewPWButt" id="viewPWButt" aria-label="toggle display password" aria-checked="false"></button>
+                <p class="inputErrText">Password must match</p>
+            </div>
+            <button class="updateButt" aria-label="Update Profile Information">Update Profile</button>
+        </div>
+        <div class="progressSection">
+            <!-- opting for a progress bar for ARIA accessibility -->
+            <progress id="percent-loaded" value="10" max="100"></progress>
+            <div class="progressPercent" id="progPercText">10%</div>
+            <!-- <div class="progressCircle">
+                <div class="innerCircle"></div>
+                <div class="percentage">
+                    <p id="percentageText">0%</p>
+                </div>
+            </div> -->
+            <p>Profile Completeness</p>
+            <div class="checklistHolder">
+                <p class="checklistItem checked">Create Account</p>
+                <p class="checklistItem">Update Roadmap Progress</p>
+                <p class="checklistItem">Setup Public Profile</p>
+                <p class="checklistItem">Complete your first project</p>
+                <p class="checklistItem">Invite your Friends</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
