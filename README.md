@@ -24,6 +24,8 @@ Hello! This repository features my takes on some of the projects found on roadma
 10 Accessible Form UI only (frontend): https://roadmap.sh/projects/accessible-form-ui
 <br>
 11 CSS only tooltip (frontend): https://roadmap.sh/projects/tooltip-ui
+<br>
+12 Restricted Textarea (frontend): https://roadmap.sh/projects/restricted-textarea
 
 
 <hr>
