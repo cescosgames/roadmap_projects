@@ -1,0 +1,95 @@
+* {
+    --color-dark: #111111;
+    --color-light: #eeeeee;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+/* place holder generic setup above */
+
+/* our wrap */
+.wrap {
+    max-width: 768px;
+    margin-inline: auto;
+    margin-top: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* our relative position outline so we can absolutely position our counter */
+
+.textAreaOutline {
+    display: flex;
+    position: relative;
+    width: 400px;
+}
+
+/* the whole text holder */
+
+.textAreaHolder {
+    position: relative;
+    width: 33vw;
+
+    display: flex;
+    flex-direction: column;
+
+    /* border: 1px dashed red; */ 
+
+    gap: 15px;
+
+    /* modifying our text area */
+    textarea {
+        border: 2px solid var(--color-dark);
+        border-radius: 15px;
+        min-height: 100px;
+        width: 400px;
+
+        background-color: var(--color-light);
+        resize: none;
+        font-family: sans-serif;
+        
+        padding: 1rem;
+
+        /* our focus settings, no ideal for accessibility, but wanted to replicate the project mockup */
+        &:focus {
+            outline: 0;
+            border: 2px solid green;
+
+            /* specifying the new border on limit added */
+            &.limit {
+                border: 2px solid red;
+            }
+        }
+    }
+
+    /* modifying our label */
+    label {
+        font-size: 1.5rem;
+    }
+}
+
+/* our absolutely positioned counter holder always bottom right inside our textarea outline */
+.counterHolder {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 2%;
+
+    width: 100px;
+
+    bottom: 0;
+    right: 5%;
+}
+
+/* to be added to all relevant elements when limit is reached */
+.limit {
+    color: red;
+}

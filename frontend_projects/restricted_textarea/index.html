@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restricted Textarea Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- our wrap to keep everything roughly centered -->
+    <div class="wrap">
+        <!-- what will hold our text area -->
+        <div class="textAreaHolder">
+            <!-- our label for the text area -->
+            <label for="submittedText">Write your Message</label>
+            <!-- our text outline, relatively positioned to allow our absolutely positioned counterHolder to always be bottom right -->
+            <div class="textAreaOutline">
+                <!-- the text area, featuring a max length of 250 characters -->
+                <textarea name="submittedText" id="submittedText" placeholder="Start typing ..." maxlength="250"></textarea>
+                <!-- our absolutely positioned counter holder, with ID's to be modified by our js -->
+                <div class="counterHolder">
+                    <p id="currentCount">0</p>
+                    <p id="maxCount">/ 250</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- our script to give functionality to our character counter -->
+    <script src="scripts.js"></script>
+</body>
+</html>
