@@ -1,0 +1,141 @@
+* {
+    --color-dark: #111111;
+    --color-light: #ffffff;
+}
+
+body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-family: sans-serif;
+}
+
+.wrap {
+    width: 500px;
+    height: 150px;
+    border: 3px solid var(--color-dark);
+    border-radius: 15px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+.explanationBox {
+    /* border: 1px dashed black; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        width: 75%;
+    }
+}
+
+.otherBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px dashed black; */
+    height: 100%;
+    width: 80%;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5rem;
+
+    a {
+        text-decoration: none;
+        color: var(--color-dark);
+        transition: 0.2s;
+
+        &:hover {
+            color: salmon;
+        }
+    }
+}
+
+/* the tooltip below */
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip:before {
+    position: absolute;
+    content: attr(data-text);
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-150%);
+
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: 0.2s;
+}
+
+.tooltip:hover::before {
+    display: flex;
+    opacity: 1;
+}
+/* on hover, affecting the arrow down visibility */
+.tooltip:hover .arrow-down {
+    display: flex;
+    opacity: 1;
+}
+
+
+
+
+
+
+/* utility shapes and such */
+
+.arrow-down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-200%);
+
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+
+    border-top: 15px solid var(--color-dark);
+
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.dot {
+    height: 3px;
+    width: 3px;
+    background-color: var(--color-dark);
+    opacity: 50%;
+    border-radius: 50%;
+    display: inline-block;
+  }

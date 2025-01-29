@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Only Tooltip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="explanationBox">
+            <p>
+                CSS Only Tooltip to appear above the item on hover.
+                <span>&rarr;</span>
+            </p>
+            
+        </div>
+        <div class="otherBox">
+            <!-- this was my first idea, better idea is adding tooltip to elements we wanat to affect -->
+            <!-- <div class="tooltip">
+                <p></p>
+                <div class="arrow-down"></div>
+            </div> -->
+            <div class="tabs">
+                <a href="#" data-text="This is the home tab" class="tooltip">
+                    Home
+                    <div class="arrow-down"></div>
+                </a>
+                <span class="dot"></span>
+                <a href="#" data-text="This is the Projects tab" class="tooltip">
+                    Projects
+                    <div class="arrow-down"></div>
+                </a>
+                <span class="dot"></span>
+                <a href="#" data-text="This is the blog tab" class="tooltip">
+                    Blog
+                    <div class="arrow-down"></div>
+                <div class="arrow-down"></div></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
