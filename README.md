@@ -26,6 +26,8 @@ Hello! This repository features my takes on some of the projects found on roadma
 11 CSS only tooltip (frontend): https://roadmap.sh/projects/tooltip-ui
 <br>
 12 Restricted Textarea (frontend): https://roadmap.sh/projects/restricted-textarea
+<br>
+13 Accordion (frontend): https://roadmap.sh/projects/accordion
 
 
 <hr>
