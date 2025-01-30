@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Practice Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- our main wrap class, encapsulating everything and centering it horizontally -->
+    <div class="wrap">
+        <!-- this holds our entire accordion aka each tab and header -->
+        <div class="accordionHolder">
+            <!-- this is our header, explaning what this is -->
+            <div class="headerBox">
+                <h1>This is a basic Accordion element</h1>
+                <p class="subtext">This project and mockup comes from roadmap.sh</p>
+            </div>
+            <!-- this is the accordion tab 'template', repeated for each tab -->
+            <div class="accordionTab">
+                <!-- this is our header, which features the title and a downcaret -->
+                <div class="accordionHeader">
+                    <p>Requirements</p>
+                    <p class="downCaret">&#9660</p>
+                </div>
+                <!-- this is the content, hidden by default, restored by adding the active tab to this divs parent (accordion tab) -->
+                <div class="accordionContent">
+                    We are required to create an accordion component that displays a list of questions or headings. When a user clicks on one of the tabs, it's corresponding answer should
+                    appear and close any previously open sections. 
+                </div>
+            </div>
+            <!-- repeat above for each tab -->
+            <div class="accordionTab">
+                <div class="accordionHeader">
+                    <p>Goal</p>
+                    <p class="downCaret">&#9660</p>
+                </div>
+                <div class="accordionContent active">
+                    The goals of this project were to; help practice DOM manipulation, practice event handling, practice implementing responsive design patterns using vanilla JavaScript.
+                </div>
+            </div>
+            <div class="accordionTab">
+                <div class="accordionHeader">
+                    <p>What was used to make this?</p>
+                    <p class="downCaret">&#9660</p>
+                </div>
+                <div class="accordionContent">
+                    This project was made with plain HTML, CSS, and JS. No outside libraries or packages were used.
+                </div>
+            </div>
+            <div class="accordionTab">
+                <div class="accordionHeader">
+                    <p>How to make this? Pt.1 design</p>
+                    <p class="downCaret">&#9660</p>
+                </div>
+                <div class="accordionContent">
+                    The design of this project features a main 'wrap' div that encapsulates everything inside of it. Inside this wrap, we have a header section that includes the title and subtext.
+                    Each 'tab' is a div that contains the tab header and the tab content. By default, the tab content is set to display none.
+                </div>
+            </div>
+            <div class="accordionTab">
+                <div class="accordionHeader">
+                    <p>How to make this? Pt.2 Interactivty</p>
+                    <p class="downCaret">&#9660</p>
+                </div>
+                <div class="accordionContent">
+                    We add interactivty to this project by toggling classes on our accordion tabs. In our css, we have an active class that adds displa=block to our tab content and rotates our
+                    down caret 180 degrees. We connect our function to toggle this class in our JS by calling foreach on each tab.
+                </div>
+            </div>
+            <div class="accordionTab">
+                <div class="accordionHeader">
+                    <p>Thanks for checking this out!</p>
+                    <p class="downCaret">&#9660</p>
+                </div>
+                <div class="accordionContent">
+                    Thanks for checking out my simple approach to a simple accordion. Check the code for explanations, I've tried to comment it out effectively.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- connecting our script here -->
+    <script src="scripts.js"></script>
+</body>
+</html>

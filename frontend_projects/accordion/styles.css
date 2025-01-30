@@ -1,0 +1,105 @@
+/* since we're notusing any external fonts, using sans-serif instead fo try and match the mockup */
+body {
+    font-family: sans-serif;
+}
+
+/* our wrap div keeping everything nice and centered on the page */
+.wrap {
+    max-width: 768px;
+    margin-inline: auto;
+    margin-top: 5%;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* styling our holder inside our wrap to match the mockup */
+.accordionHolder {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
+
+    /* border: 1px solid red; */
+}
+
+/* styling our header */
+.headerBox {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    h1 {
+        font-weight: 5s00;
+        font-size: 1.5rem;
+    }
+
+    .subtext {
+        opacity: 80%;
+    }
+}
+
+/* setting up our tab that holds the header and content */
+.accordionTab {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* our accordion header, spacing the caret and title at opposite ends */
+.accordionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    /* light feedback */
+    &:hover {
+        opacity: 75%;
+    }
+}
+
+/* the content, set to display none by default */
+.accordionContent {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-right: 3rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1em;
+    line-height: 150%;
+
+    display: none;
+}
+
+/* adding a transition to our caret for flipping around */
+.downCaret {
+    transition: 0.2s;
+}
+
+/* the most important part, displays our content and rotates our caret */
+.active {
+    .accordionContent {
+        display: block;
+    }
+
+    .downCaret {
+        transform: rotate(180deg);
+    }
+}
