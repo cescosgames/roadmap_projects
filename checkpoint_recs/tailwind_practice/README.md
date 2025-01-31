@@ -22,10 +22,7 @@ better.
 
 ## How To Run The Project
 
-To run this project, you'll need to download or copy the html, css and js into your own folder. Then you should init your npm, and add tailwindcss through
-the command line. There are many other ways to install tailwind, but I prefer the command line. I will say I haven't learned about vite yet, but it seems 
-that vite is the preferred way to handle packages like this. Once you've installed tailwind css, make sure to follow the installation docs and import your
-css and set it to 'watch.' You can add your own function to start 'watching' inside your package.json file as demonstrated in the package.json file in this folder.
+To run this project, you'll need to download or copy the html, css and js into your own folder. Then you should init your package.json, and add tailwindcss through your preferred method (I went through the command line personally).Once you've installed tailwind css, make sure to follow the installation docs! They explain it much better than I can! One note that helped me, you can add your own function to start 'watching' inside your package.json file as demonstrated in the package.json file in this folder. This makes it quicker to close and come back to your tailwind projects in my experience.
 
 ## Lessons Learned:
 
