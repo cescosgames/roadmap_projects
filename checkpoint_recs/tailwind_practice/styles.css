@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+    --color-midnight: #121063;  
+    --color-tahiti: #3ab7bf;  
+    --color-bermuda: #78dcca;
+}
+
+/* you can do custom styles as well! */
+body {
+    /* background-image: url('/images/practice_logo.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 800px;
+    /* background-position: 90% -25%; */
+    background-color: rgba(58, 183, 191,0.1);
+}
+
+/* styling our custom hamburger menu */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top, .hamburger-mid, .hamburger-bot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #121063;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-mid {
+    transform: translateY(7px);
+}
+
+.hamburger-bot {
+    transform: translateY(14px);
+} 
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-mid {
+    opacity: 0;
+}
+
+.open .hamburger-bot {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.mobileMenu {
+    position: absolute;
+    z-index: 99;
+}
