@@ -53,3 +53,5 @@ I wish Emmet had all the relevant meta tags, so I'm going to store my own simple
   <!-- Title -->
   <title>Your Title Here</title>
 </head>
+
+>>>>>>> c61d980a8984395911cb5a891ef327a314ac7560
