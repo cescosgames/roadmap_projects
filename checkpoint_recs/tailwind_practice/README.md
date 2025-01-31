@@ -16,9 +16,9 @@ elements of tailwind.
 In the below visual examples, you will see outlines around each section. I left these outlines in because for me personally it helped me understand tailwind
 better.
 <img width="819" alt="Screenshot 2025-01-31 at 12 32 03" src="https://github.com/user-attachments/assets/a39addd6-0dcf-4e39-b899-71c9999a85dc" />
-Desktop
+<br>Desktop<br>
 <img width="571" alt="Screenshot 2025-01-31 at 12 32 19" src="https://github.com/user-attachments/assets/2d1ba044-dbcd-4f0d-bdbf-55e410a29859" />
-Mobile
+<br>Mobile<br>
 
 ## How To Run The Project
 
@@ -36,5 +36,7 @@ Once this clicked, tailwind became a lot easier and the challenge was just findi
 seemed like css that made my html unreadable, but as I continued to use it, I could feel the 'quickness' of it and having universal naming conventions (as 
 opposed to self-named classes) I imagine would make collaborative work much easier. 
 <br>
-Overall, I really like tailwind. I didn't think I would initially, but I'm glad to have a basic understanding of it. I will probably continue to use plain CSS
-for some projects and tailwind for others as my projects are small in scope right now. 
+Overall, I really like tailwind. I didn't think I would initially, but I'm glad to have a basic understanding of it. I will probably continue to use plain CSS for some projects and tailwind for others as my projects are small in scope right now. I will say however that tailwind really makes the html feel
+'messy' quick. 
+<br>
+Lots of room for improvement here, and I definitely plan on improving my tailwind capabilities. This mostly seems like a practice that just needs to be repeated many times to speed up efficiency and begin memorizing the common CSS usages.
