@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- my quick usual wrap, for centering everything on page -->
+    <div class="wrap">
+        <!-- where our calculator elements will be held -->
+        <div class="calculatorHolder">
+            <!-- the header -->
+            <div class="header">Age Calculator</div>
+            <!-- the 'main' area aka the form with button -->
+            <div class="mainArea">
+                <form>
+                    <label for="birthDate">Enter your birth date:</label>
+                    <input type="text" name="birthDate" id="birthDate" placeholder="MM/DD/YYYY" required maxlength="10" class="" autocomplete="off">
+                    <div class="calendarIcon"></div>
+                    <div class="errorMessage" id="errorMessage">
+                        <p class="errorText" id="errorText">Error</p>
+                    </div>
+                    <!-- don't forget to specify a button inside a form as a button if you don't want it to act as a submission for the form -->
+                    <button type="button" id="calcDate">
+                        <p>Calculate</p>
+                    </button>
+                </form>
+            <!-- the result -->
+             <div class="resultHolder">
+                <p id="resultText">Please enter a valid date</p>
+             </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+    <!-- import our script as module for use with luxon -->
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>

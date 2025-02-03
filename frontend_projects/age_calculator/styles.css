@@ -1,0 +1,130 @@
+* {
+    /* almost black */
+    --color-dark: #111111;
+    /* almost white */
+    --color-light: #eeeeee;
+    /* shaded grey */
+    --color-medium-light: #666666;
+    /* pale black */
+    --color-medium-dark: #444444;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.wrap {
+    max-width: 768px;
+    margin-inline: auto;
+    margin-top: 1rem;
+
+    /* border: 2px solid red; */
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.calculatorHolder {
+    /* border: 1px solid black; */
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+    gap: 25px;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.mainArea {
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    input {
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 0.5rem;
+
+        outline: none;
+    }
+
+    button {
+        border-radius: 5px;
+        border: none;
+        background-color: var(--color-medium-dark);
+        color: var(--color-light);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--color-medium-light);
+        }
+
+        &:disabled {
+            cursor: auto;
+            opacity: 30%;
+
+            &:hover {
+                background-color: var(--color-medium-dark);
+            }
+        }
+    }
+}
+
+.calendarIcon {
+    height: 15px;
+    width: 15px;
+    background-color: var(--color-medium-dark);
+    border-radius: 5px;
+
+    position: absolute;
+    right: 3%;
+    /* sorry for the below method... */
+    transform: translateY(260%);
+}
+
+.resultHolder {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.invalid {
+    color: red;
+    border: 2px solid red;
+}
+
+.errorMessage {
+    display: none;
+    font-weight: bold;
+    color: red;
+    padding: 0;
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+.errorActive {
+    display: block;
+}
