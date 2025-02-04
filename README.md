@@ -41,3 +41,10 @@ Hello! This repository features my takes on some of the projects found on roadma
 
 At each roadmap checkpoint, there are checkpoint practice projects. These aren't officially tracked as projects by roadmap, but you can find my solutions to the checkpoint projects
 found in the 'Full Stack Developer' roadmap in the folder titled checkpoint_recs. 
+
+
+<hr>
+
+#### Small Note
+
+After reading the 'Collaborative Work Checkpoint' in the full stack roadmap, the author recommends to save repository names using hyphens rather than underscores and adding licenses to each repository. Since these are practice projects, I will most likely not include licenses outside of practice purposes. As for the naming convention, you will notice my early projects use underscore - moving forward I will use hyphen.
