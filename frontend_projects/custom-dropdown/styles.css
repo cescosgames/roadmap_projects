@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+}
+
+.wrap {
+    max-width: 768px;
+    /* border: 2px solid black;
+    border-radius: 15px; */
+    margin-inline: auto;
+
+    margin-top: 10%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.dropDown {
+    width: 300px;
+    border-radius: 15px;
+    padding: 1rem;
+    position: relative;
+}
+
+.dropdownClickArea {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 0rem 1rem 0rem 1rem;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    
+    cursor: pointer;
+}
+
+.dropdownOptions {
+    /* background-color: #dddddd; */
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    list-style: none;
+    /* padding: 1rem 1rem 1rem 1rem; */
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 25px; */
+    transition: 0.1s;
+    position: absolute;
+    width: 100%;
+    /* height 0 to transition into full height */
+    height: 0;
+    border: none;
+    overflow-y: scroll;
+    z-index: 1;
+    scrollbar-width: none;
+    opacity: 0;
+
+    li {
+        transition: 0.2s;
+        /* border: 1px solid black; */
+        border-radius: 15px;
+        padding: 1rem;
+
+        &:hover {
+            background-color: #dddddd;
+            cursor: pointer;
+        }
+    }
+}
+
+.menuOpen {
+    height: 10.5rem;
+    border: 2px solid black;
+    opacity: 1;
+}
+
+.selectedOption {
+    color: salmon;
+    font-weight: bold;
+}
+
+
+.downCaret {
+    transition: 0.2s;
+}
+
+/* for rotating the caret */
+.rotate {
+    transition: 0.2s;
+    transform: rotate(180deg);
+}
+
+
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
