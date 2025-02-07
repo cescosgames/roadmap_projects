@@ -1,3 +1,10 @@
+## NOTE
+For continuity, I want to track all my projects within this single mega repo. To make my life easier however with git, I found it quicker to push
+larger projects (such as React projects) to github using project specific repos. So in this folder, you won't find anything except for the original
+README included in the project repo alongside a link to the project repo.
+<br>
+[Link to the repo] (https://github.com/cescosgames/react-flashcards)
+
 # A simple flashcard app in React
 The goal of this project was to practice and implement state management and componenet based architecture using JavaScript frameworks. We were required to have; pre-defined flashcards with questions
 and answers, progress bar to show the user's progress, ability to view flashcards one at a atime and flip to reveal the answer, simple naviation to cycle through the flashcards. The visual mockup
