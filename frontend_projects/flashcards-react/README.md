@@ -3,7 +3,7 @@ For continuity, I want to track all my projects within this single mega repo. To
 larger projects (such as React projects) to github using project specific repos. So in this folder, you won't find anything except for the original
 README included in the project repo alongside a link to the project repo.
 <br>
-[Link to the repo] (https://github.com/cescosgames/react-flashcards)
+[[Link to the repo](https://github.com/cescosgames/react-flashcards)]
 
 # A simple flashcard app in React
 The goal of this project was to practice and implement state management and componenet based architecture using JavaScript frameworks. We were required to have; pre-defined flashcards with questions
