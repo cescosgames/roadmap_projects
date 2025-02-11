@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- the holder -->
+    <div class="wrap">
+
+        <!-- the inside of the holder -->
+        <div class="inside">
+
+            <!-- the title -->
+            <div class="titleBox">
+                <p>Task Tracker</p>
+            </div>
+
+            <!-- where the tasks get input, the input field -->
+            <div class="taskBoxHolder">
+                <input type="text" placeholder="Start writing and press enter to create task" id="taskInput">
+                <button class="enterButt" id="enterButt"><</button>
+            </div>
+
+            <!-- the task holder, with 2 commented out examples for design. Start empty -->
+            <div class="taskHolder" id="taskHolder">
+                <!-- <div class="exampleTask">
+                    <button class="checkBox"></button>
+                    <p class="taskText">Test</p>
+                    <button class="trashButt"></button>
+                    <hr>
+                </div>
+
+                <div class="exampleTask checked">
+                    <button class="checkBox"></button>
+                    <p class="taskText">Test</p>
+                    <button class="trashButt"></button>
+                    <hr>
+                </div> -->
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- our script -->
+    <script src="scripts.js"></script>
+</body>
+</html>

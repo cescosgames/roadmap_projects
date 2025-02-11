@@ -1,0 +1,173 @@
+* {
+    --color-light: #FeE5AB;
+    --color-dark: #222222;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.wrap {
+    max-width: 500px;
+    margin-inline: auto;
+    margin-top: 2rem;
+
+    border: 2px solid var(--color-light);
+    border-radius: 15px;
+}
+
+.inside {
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+.titleBox {
+    margin-bottom: 0;
+    
+    p {
+        font-size: 1rem;
+    }
+}
+
+.taskBoxHolder {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+
+    /* border: 1px solid red; */
+
+    input {
+        /* where is the 4% overlap coming from? */
+        width: 96%;
+        border: 2px solid var(--color-light);
+        border-radius: 10px;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        background-color: var(--color-dark);
+        color: var(--color-light);
+
+        &:focus, input:focus {
+            outline: none;
+        }
+    }
+}
+
+/* the buttons */
+.enterButt {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 80%;
+    width: 10%;
+
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-light);
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    color: var(--color-dark);
+
+    &:hover {
+        opacity: 50%;
+    }
+}
+
+.taskHolder {
+    margin-top: 1rem;
+    position: relative;
+
+    hr {
+        opacity: 25%;
+    }
+}
+
+.exampleTask {
+    /* border: 1px solid red; */
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    hr {
+        position: absolute;
+        width: 100%;
+        opacity: 25%;
+        bottom: -10%;
+        /* transform: translateY(-100); */
+    }
+}
+
+.taskText {
+    width: 86%;
+    padding-left: 0.5rem;
+    overflow-x: scroll;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.checkBox {
+    width: 7%;
+    aspect-ratio: 1/1;
+
+    border: 2px solid var(--color-light);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+
+    cursor: pointer;
+    
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 50%;
+        background-color: var(--color-light);
+    }
+}
+
+.trashButt {
+    width: 7%;
+    aspect-ratio: 1/1;
+
+    border: 2px solid var(--color-light);
+    border-radius: 5px;
+    background-color: var(--color-light);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 50%;
+    }
+}
+
+.checked {
+    .checkBox {
+        background-color: var(--color-light);
+    }
+
+    .taskText {
+        text-decoration: line-through;
+        opacity: 50%;
+    }
+}
+
+
+
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera, from W3 */
+.taskText::-webkit-scrollbar {
+    display: none;
+}
