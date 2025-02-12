@@ -5,9 +5,10 @@ arguments, making http requests, etc.
 
 ## How it was made:
 
-**Tech used:** node.js, npm
+**Tech used:** node.js, npm, chalk, chalk-animation, figlet, gradient-string, inquirer, nanospinner
 
-This was done almost entirely inside the terminal inside vscode with testing occuring in the computers main terminal.
+This was done almost entirely inside the terminal inside vscode with testing occuring in the computers main terminal. Lots of external
+packages were used for visual effects.
 
 ## Visual Example
 
