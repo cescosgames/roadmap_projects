@@ -36,6 +36,8 @@ Hello! This repository features my takes on some of the projects found on roadma
 16. Framework Flash Cards (frontend) [external repo](https://github.com/cescosgames/react-flashcards) : https://roadmap.sh/projects/flash-cards
 <br>
 17. JS organized task tracker (frontend): https://roadmap.sh/projects/task-tracker-js
+<br>
+18. GitHub Random Repository (frontend): https://roadmap.sh/projects/github-random-repo
 
 
 <hr>
