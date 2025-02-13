@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Random Github Repo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- the wrap -->
+    <div class="wrap">
+        <!-- the interior -->
+        <div class="interior">
+            <!-- the title holder -->
+            <div class="titleHolder">
+                <div class="square"></div>
+                <span class="title">Random Github Repository Finder</span>
+            </div>
+            
+            <!-- the dropdown menu holder -->
+            <div class="dropDown">
+                <!-- the area you click -->
+                <div class="dropdownClickArea" id="clickArea">
+                    <span class="selected" id="selectedOption">Select a Language</span>
+                    <p class="downCaret" id="downCaret">&#9660</p>
+                </div>
+                <!-- the drop down list -->
+                <ul class="dropdownOptions" id="dropdownMenu">
+                    <li class="listOption">Test</li>
+                </ul>
+            </div>
+            
+            <!-- the result box -->
+            <div class="resultBox" id="successfulResult">
+
+                <!-- the informational box, toggle on off/overlay -->
+                <div class="informationBox">
+                    <p class="infoBoxText" id="infoBoxText">Please Select a Language</p>
+                </div>
+
+                <!-- the content for the result box -->
+                <div class="resultTitle" id="repoTitle">Example Title</div>
+                <div class="resultDescription fade" id="repoDescr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et ex culpa vel saepe libero perspiciatis, optio possimus neque eum ab aut dolorum earum eveniet obcaecati nostrum corrupti harum ad!</div>
+                <div class="resultInfoHolder">
+                    <div class="resultIconInfo">
+                        <div class="icon"></div>
+                        <p id="languageNumText">Language</p>
+                    </div>
+                    <div class="resultIconInfo">
+                        <div class="icon"></div>
+                        <p id="starsNumText">stars</p>
+                    </div>
+                    <div class="resultIconInfo">
+                        <div class="icon"></div>
+                        <p id="forkNumText">forks</p>
+                    </div>
+                    <div class="resultIconInfo">
+                        <div class="icon"></div>
+                        <p id="errorNumText">errors</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- the submit/refresh/error button, hidden by default -->
+            <div class="buttonHolder">
+                <button onclick="getRandomRepo()" id="refreshButt" class="mainButton hidden"> Refresh </button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- our scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
