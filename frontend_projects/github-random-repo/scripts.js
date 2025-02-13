@@ -5,7 +5,7 @@ const dropdownMenu = document.getElementById('dropdownMenu');
 const downCaret = document.getElementById('downCaret');
 let listOptions = document.querySelectorAll('.listOption');
 
-// our information constants
+// our information variables
 let selectedLanguage = '';
 
 // our bool checking if menu is open or not
