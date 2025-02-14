@@ -3,7 +3,7 @@ Hello! This repository features my takes on some of the projects found on roadma
 
 ## Project List (in order of completion)
 
-1. Single page CV (frontend): https://roadmap.sh/projects/single-page-cv
+1 Single page CV (frontend): https://roadmap.sh/projects/single-page-cv
 <br>
 2. Simple tabs (frontend): https://roadmap.sh/projects/simple-tabs
 <br>
