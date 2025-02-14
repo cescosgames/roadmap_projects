@@ -3,35 +3,35 @@ Hello! This repository features my takes on some of the projects found on roadma
 
 ## Project List (in order of completion)
 
-1 Single page CV (frontend): https://roadmap.sh/projects/single-page-cv
+1. Single page CV (frontend): https://roadmap.sh/projects/single-page-cv
 <br>
-2 Simple tabs (frontend): https://roadmap.sh/projects/simple-tabs
+2. Simple tabs (frontend): https://roadmap.sh/projects/simple-tabs
 <br>
-3 Cookie consent (frontend): https://roadmap.sh/projects/cookie-consent
+3. Cookie consent (frontend): https://roadmap.sh/projects/cookie-consent
 <br>
-4 Changelog component (frontend): https://roadmap.sh/projects/changelog-component
+4. Changelog component (frontend): https://roadmap.sh/projects/changelog-component
 <br>
-5 Basic HTML only site (frontend): https://roadmap.sh/projects/basic-html-website
+5. Basic HTML only site (frontend): https://roadmap.sh/projects/basic-html-website
 <br>
-6 HTML and CSS only portfolio (frontend): https://roadmap.sh/projects/portfolio-website
+6. HTML and CSS only portfolio (frontend): https://roadmap.sh/projects/portfolio-website
 <br>
-7 Image Grid Layout (frontend): https://roadmap.sh/projects/image-grid
+7. Image Grid Layout (frontend): https://roadmap.sh/projects/image-grid
 <br>
-8 Testimonial Cards (frontend): https://roadmap.sh/projects/testimonial-cards
+8. Testimonial Cards (frontend): https://roadmap.sh/projects/testimonial-cards
 <br>
-9 Datepicker UI only (frontend): https://roadmap.sh/projects/datepicker-ui
+9. Datepicker UI only (frontend): https://roadmap.sh/projects/datepicker-ui
 <br>
-10 Accessible Form UI only (frontend): https://roadmap.sh/projects/accessible-form-ui
+10. Accessible Form UI only (frontend): https://roadmap.sh/projects/accessible-form-ui
 <br>
-11 CSS only tooltip (frontend): https://roadmap.sh/projects/tooltip-ui
+11. CSS only tooltip (frontend): https://roadmap.sh/projects/tooltip-ui
 <br>
-12 Restricted Textarea (frontend): https://roadmap.sh/projects/restricted-textarea
+12. Restricted Textarea (frontend): https://roadmap.sh/projects/restricted-textarea
 <br>
-13 Accordion (frontend): https://roadmap.sh/projects/accordion
+13. Accordion (frontend): https://roadmap.sh/projects/accordion
 <br>
-14 Age Calculator (frontend): https://roadmap.sh/projects/age-calculator
+14. Age Calculator (frontend): https://roadmap.sh/projects/age-calculator
 <br>
-15 Custom Dropdown (frontend): https://roadmap.sh/projects/custom-dropdown
+15. Custom Dropdown (frontend): https://roadmap.sh/projects/custom-dropdown
 <br>
 16. Framework Flash Cards (frontend) [external repo](https://github.com/cescosgames/react-flashcards) : https://roadmap.sh/projects/flash-cards
 <br>
