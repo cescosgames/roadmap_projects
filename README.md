@@ -40,6 +40,8 @@ Hello! This repository features my takes on some of the projects found on roadma
 18. GitHub Random Repository (frontend): https://roadmap.sh/projects/github-random-repo
 <br>
 19. Reddit Client (frontend) [external repo](https://github.com/cescosgames/newitt_project) : https://roadmap.sh/projects/reddit-client
+<br>
+20. Temperature Converter (frontend): https://roadmap.sh/projects/temperature-converter
 
 
 <hr>
