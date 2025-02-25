@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* I was going to do a @theme color palette, but decided against it. huey.design has great palettes tho */
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-gray-950);
+}
+
+/* our deactivated class to give visual feedback on deactivation */
+.deactivated {
+    opacity: 50%;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* our hidden class to hide things, such as the result text when starting up */
+.hidden {
+    display: none;
+}

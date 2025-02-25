@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Temperature Converter</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- the absolute centered holder where our converter will reside in -->
+    <section class="w-full h-full absolute inset-0 flex items-center justify-center">
+        <!-- the centered holder  -->
+            <div class="text-gray-200 border-1 border-amber-100 rounded-md p-5 md:w-xl w-xs shadow-[0px_0px_50px_0px_rgba(234,218,0,0.5)] flex relative flex-col gap-5">
+                <!-- our 'header' aka title and subtitle -->
+                <div class="flex flex-col w-full">
+                    <p class="text-2xl">Temperature Converter</p>
+                    <p class="opacity-50">Enter the temperature, select units, and convert!</p>
+                </div>
+                <!-- the inputs holder -->
+                <div class="flex justify-between border-1 rounded-md px-2 py-3 border-amber-100 h-full items-center gap-5 flex-col md:flex-row">
+                    <label for="temperature"></label>
+                    <!-- firefox does not stop letters from going into an input type='number' field -->
+                    <input type="number" id="tempInput" name="temperature" inputmode="numeric" step="0.05" min="-999.99" max="999.99" placeholder="0.00" maxlength="6" required class="w-full">
+
+                    <!-- the first option -->
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="unit" class="hidden"></label>
+                        <select id="fromUnit" name="unit" class="cursor-pointer" onchange=checkInputs()>
+                            <!-- using a default none option onstart -->
+                            <option value="none" selected disabled hidden>From Unit</option>
+                            <option value="Celsius"><Celsius>Celsius</option>
+                            <option value="Fahrenheit">Fahrenheit</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                    </div>
+
+                    <!-- the second option -->
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="unit" class="hidden"></label>
+                        <select id="toUnit" name="unit" class="cursor-pointer" onchange=checkInputs()>
+                            <option value="none" selected disabled hidden>To Unit</option>
+                            <option value="Celsius">Celsius</option>
+                            <option value="Fahrenheit">Fahrenheit</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                    </div> 
+
+                    <!-- our main convert button -->
+                    <button id="convertButton" onclick=convertTemp() class="bg-gray-950 text-amber-100 text-md border-1 border-amber-100 rounded-md p-1 transition cursor-pointer hover:bg-amber-100 hover:text-black deactivated">Convert</button>
+                
+                </div> 
+
+                <!-- the outcome holder -->
+                <div class="flex items-center justify-center w-full text-center">
+                    <p id="outcomeText" class="text-amber-100 hidden">x unit is y unit</p>
+                </div>
+                
+            </div>
+    </section>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

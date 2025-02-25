@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.8",
+    "tailwindcss": "^4.0.8"
+  },
+  "name": "temp-converter",
+  "version": "1.0.0",
+  "main": "scripts.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./styles.css -o ./src/output.css", 
+    "watch": "tailwindcss -i ./styles.css -o ./src/output.css --watch"
+  },
+  "author": "Cesco",
+  "license": "MIT",
+  "description": ""
+}
