@@ -42,6 +42,8 @@ Hello! This repository features my takes on some of the projects found on roadma
 19. Reddit Client (frontend) [external repo](https://github.com/cescosgames/newitt_project) : https://roadmap.sh/projects/reddit-client
 <br>
 20. Temperature Converter (frontend): https://roadmap.sh/projects/temperature-converter
+<br>
+21. Pomodoro Tracker (frontend) [external repo](https://github.com/cescosgames/simplidoro) : https://roadmap.sh/projects/pomodoro-timer
 
 
 <hr>
