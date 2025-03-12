@@ -44,6 +44,8 @@ Hello! This repository features my takes on some of the projects found on roadma
 20. [Temperature Converter](https://github.com/cescosgames/roadmap_projects/tree/main/frontend_projects/temperature-converter) (frontend): https://roadmap.sh/projects/temperature-converter
 <br>
 21. Pomodoro Tracker (frontend) [external repo](https://github.com/cescosgames/simplidoro) : https://roadmap.sh/projects/pomodoro-timer
+<br>
+22. Weather Web App (frontend) [external repo](https://github.com/cescosgames/bubweather) : https://roadmap.sh/projects/weather-app
 
 
 <hr>
