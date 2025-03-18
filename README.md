@@ -63,4 +63,4 @@ found in the 'Full Stack Developer' roadmap in the folder titled checkpoint_recs
 
 #### Small Note
 
-After reading the 'Collaborative Work Checkpoint' in the full stack roadmap, the author recommends to save repository names using hyphens rather than underscores and adding licenses to each repository. Since these are practice projects, I will most likely not include licenses outside of practice purposes. As for the naming convention, you will notice my early projects use underscore - moving forward I will use hyphen.
+After reading the 'Collaborative Work Checkpoint' in the full stack roadmap, the author recommends to save repository names using hyphens rather than underscores and adding licenses to each repository. Since these are practice projects. Moving forward I will implement these changes but not all projects may be up to date in regard to these notes.
