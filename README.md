@@ -46,6 +46,8 @@ Hello! This repository features my takes on some of the projects found on roadma
 21. Pomodoro Tracker (frontend) [external repo](https://github.com/cescosgames/simplidoro) : https://roadmap.sh/projects/pomodoro-timer
 <br>
 22. Weather Web App (frontend) [external repo](https://github.com/cescosgames/bubweather) : https://roadmap.sh/projects/weather-app
+<br>
+23. Quiz App (frontend) [external repo](https://github.com/cescosgames/jsonquiz) : https://roadmap.sh/projects/quiz-app
 
 
 <hr>
