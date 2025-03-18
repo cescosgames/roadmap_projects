@@ -1,5 +1,6 @@
 # Roadmap Projects
-Hello! This repository features my takes on some of the projects found on roadmap.sh <br> Projects can be found by title in their respective category folder. Thanks roadmap.sh!
+Hello! This repository features my takes on some of the projects found on roadmap.sh <br> Projects can be found by title in their respective category folder.
+For external repos, visit the link to see the whole project. Thanks roadmap.sh!
 
 ## Project List (in order of completion)
 
