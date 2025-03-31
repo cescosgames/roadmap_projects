@@ -49,7 +49,8 @@ For external repos, visit the link to see the whole project. Thanks roadmap.sh!
 22. Weather Web App (frontend) [external repo](https://github.com/cescosgames/bubweather) : https://roadmap.sh/projects/weather-app
 <br>
 23. Quiz App (frontend) [external repo](https://github.com/cescosgames/jsonquiz) : https://roadmap.sh/projects/quiz-app
-
+<br>
+24. Stories Clone (frontend) [external repo](https://github.com/cescosgames/story-clone) : https://roadmap.sh/projects/stories-feature
 
 <hr>
 
