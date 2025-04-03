@@ -1,0 +1,14 @@
+{
+  "name": "cg-trasktrackercli",
+  "version": "1.0.0",
+  "description": "A simple CLI task-tracker based on the roadmap.sh project, Backend: Task Tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "taskTracker": "./index.js"
+  },
+  "author": "Cesco",
+  "license": "ISC"
+}
