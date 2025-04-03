@@ -14,7 +14,7 @@ tracker and typing 'help' or 'h'!
 ## Visual Examples
 <br> Example demonstrating using the task tracker <br>
 
-![usage gif](/taskTrackerCLIdemo.gif)
+![taskTrackerCLIdemo](https://github.com/user-attachments/assets/819416fb-36f3-49b9-857f-e6c043183743)
 
 ## How To Run The Project
 
