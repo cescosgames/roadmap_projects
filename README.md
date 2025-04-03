@@ -5,7 +5,6 @@ For external repos, visit the link to see the whole project. Thanks roadmap.sh!
 ## Project List (in order of completion)
 
 1. [Single page CV](https://github.com/cescosgames/roadmap_projects/tree/main/frontend_projects/single_page_HTML_cv_project) (frontend): https://roadmap.sh/projects/single-page-cv
-<br>
 2. [Simple tabs](https://github.com/cescosgames/roadmap_projects/tree/main/frontend_projects/simple_tabs) (frontend): https://roadmap.sh/projects/simple-tabs
 <br>
 3. [Cookie consent](https://github.com/cescosgames/roadmap_projects/tree/main/frontend_projects/cookie_consent) (frontend): https://roadmap.sh/projects/cookie-consent
