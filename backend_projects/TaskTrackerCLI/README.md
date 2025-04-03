@@ -18,11 +18,7 @@ tracker and typing 'help' or 'h'!
 
 ## How To Run The Project
 
-1. Download or clone the repo onto your local environment, and navigate into the folder
-```
-git clone https://github.com/cescosgames/
-cd 
-```
+1. Download the repo onto your local environment, and navigate into the folder you downloaded
 2. Run in your code editor or run it from your terminal by calling (sudo if you need permission)
 ```
 npm link 
