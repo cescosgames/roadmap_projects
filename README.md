@@ -32,6 +32,8 @@ For external repos, visit the link to see the whole project. Thanks roadmap.sh!
 ##### Backend projects start here
 1. [Task Tracker](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/TaskTrackerCLI) (backend) : https://roadmap.sh/projects/task-tracker
 <hr>
+2. [GithHub User Activity CLI](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/GithubUserActivity) (backend) : https://roadmap.sh/projects/github-user-activity
+<hr>
 
 ### Checkpoint projects
 
