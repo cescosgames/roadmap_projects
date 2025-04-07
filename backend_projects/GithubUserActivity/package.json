@@ -1,0 +1,14 @@
+{
+  "name": "gh-user-activity",
+  "version": "1.0.0",
+  "description": "a simple github recent activity fetcher from roadmap.sh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ghFetch": "./index.js"
+  },
+  "author": "cesco",
+  "license": "ISC"
+}
