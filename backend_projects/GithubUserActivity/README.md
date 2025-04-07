@@ -44,5 +44,4 @@ Following the project guidelines, this project features...
 4. No external libraries or frameworks used
 
 ## Lessons Learned:
-
-
+Similar to using fetch on the front end projects, it's nice to see how Node.js works so similarly on both sides. Lots of different possible approaches to this project, but I'm happy with my async/await approach as it feels more familiar and 'straightforward' to me. Overall, a fun project with lots of solutions! 
