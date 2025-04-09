@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "cost": "4.99",
+    "description": "taco",
+    "category": "food",
+    "month": "April"
+  },
+  {
+    "id": 2,
+    "cost": "6.99",
+    "description": "handsoap",
+    "category": "cleaning supplies",
+    "month": "April"
+  },
+  {
+    "id": 3,
+    "cost": "129.99",
+    "description": "gameboy",
+    "category": "entertainment",
+    "month": "April"
+  },
+  {
+    "id": 4,
+    "cost": "1.00",
+    "description": "terminal",
+    "category": "general",
+    "month": "April"
+  }
+]
