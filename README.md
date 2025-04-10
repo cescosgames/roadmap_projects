@@ -32,7 +32,8 @@ For external repos, visit the link to see the whole project. Thanks roadmap.sh!
 ##### Backend projects start here
 1. [Task Tracker](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/TaskTrackerCLI) (backend) : https://roadmap.sh/projects/task-tracker
 2. [GithHub User Activity CLI](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/GithubUserActivity) (backend) : https://roadmap.sh/projects/github-user-activity
-3. [Expense Tracker CLI ](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/expense-tracker) (backend) : https://roadmap.sh/projects/expense-tracker
+3. [Expense Tracker CLI](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/expense-tracker) (backend) : https://roadmap.sh/projects/expense-tracker
+4. [Number Guessing Game](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/number-guesser) (backend) : https://roadmap.sh/projects/number-guessing-game
 <hr>
 
 ### Checkpoint projects
