@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Length</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Convert Length!</h1>
+
+        <!-- this is the 'navbar'  -->
+
+        <ul class="list">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/length">Length Conversion</a>
+            </li>
+            <li>
+                <a href="/weight">Weight Conversion</a>
+            </li>
+            <li>
+                <a href="/temperature">Temperature Conversion</a>
+            </li>
+        </ul>
+
+        <!-- this is the form, changing to target self now -->
+        <form action="/submit" method="POST" target="_self" class="vertical">
+            <!-- our length value -->
+            <label for="value">Length:</label>
+            <input type="text" id="value" name="value" required>
+
+            <!-- our type of conversion -->
+            <input type="hidden" name="conversionType" value="length">
+
+            <!-- our unit from -->
+            <label for="unitA">Select Unit From:</label>
+            <select name="unitA" id="unitA">
+                <option value="Kilometers">Kilometers</option>
+                <option value="Miles">Miles</option>
+            </select>
+
+            <!-- our unit too -->
+            <label for="unitB">Select Unit To:</label>
+            <select name="unitB" id="unitB">
+                <option value="Kilometers">Kilometers</option>
+                <option value="Miles">Miles</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
