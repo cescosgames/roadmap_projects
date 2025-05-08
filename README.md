@@ -39,7 +39,7 @@ For external repos, visit the link to see the whole project. Thanks roadmap.sh!
 
 ### Checkpoint projects
 
-At each roadmap checkpoint, there are checkpoint practice projects. These aren't officially tracked as projects by roadmap, but you can find my solutions to the checkpoint projects
+At each roadmap checkpoint, there are checkpoint practice projects. These aren't officially tracked as projects by roadmap, but you can find my [solutions](https://github.com/cescosgames/roadmap_projects/tree/main/checkpoint_recs) to the checkpoint projects
 found in the 'Full Stack Developer' roadmap in the folder titled checkpoint_recs. 
 
 
