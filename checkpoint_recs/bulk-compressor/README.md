@@ -15,7 +15,7 @@ Another project from the node js CLI checkpoint, this time compressing all the i
 2. Open in your preferred IDE 
 3. In your integrated terminal, call node index.js (or if using nodemon, npx nodemon index.js)
 ```
-node index.js -
+node index.js compress -i /your/filepath/
 ```
 
 ## Review
