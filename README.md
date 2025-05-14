@@ -35,6 +35,7 @@ For external repos, visit the link to see the whole project. Thanks roadmap.sh!
 3. [Expense Tracker CLI](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/expense-tracker) (backend) : https://roadmap.sh/projects/expense-tracker
 4. [Number Guessing Game](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/number-guesser) (backend) : https://roadmap.sh/projects/number-guessing-game
 5. [Unit Converter](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/unit-converter) (backend) : https://roadmap.sh/projects/unit-converter
+6. [Personal Blog](https://github.com/cescosgames/express-personal-blog) (backend) : https://roadmap.sh/projects/personal-blog
 <hr>
 
 ### Checkpoint projects
