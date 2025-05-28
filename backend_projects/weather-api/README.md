@@ -21,7 +21,7 @@ weather controller which handles our backend calls.
 
 1. Download the files onto your local environment or copy this repo and navigate into the folder you downloaded them into
 ```
-cd weather-API-express
+cd weather-api
 ```
 2. Open in your preferred IDE and install dependencies
 ```
