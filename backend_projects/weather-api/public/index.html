@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather API basic UI</h1>
+    
+        <!-- landing page, make requests from here -->
+        <div class="navbar">
+            <a href="/">Home</a>
+            <!-- <a href="/about">About</a> -->
+        </div>
+        <hr>
+
+        <!-- input and button for city, + output -->
+        <input class="weather-input" type="text" id="cityInput" placeholder="Enter City">
+        <button class="weather-button" id="weatherButt">Fetch Weather</button>
+        <div id="weatherOutput"></div>
+        
+    </div>
+    <!-- script to interact with posts, might just do inline tbh not sure -->
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
