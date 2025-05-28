@@ -36,6 +36,7 @@ external repos which you can visit by clicking the title which links the specifi
 4. [Number Guessing Game](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/number-guesser) (backend) : https://roadmap.sh/projects/number-guessing-game
 5. [Unit Converter](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/unit-converter) (backend) : https://roadmap.sh/projects/unit-converter
 6. Personal Blog (backend) [external repo](https://github.com/cescosgames/express-personal-blog) : https://roadmap.sh/projects/personal-blog
+7. [Weather API](https://github.com/cescosgames/roadmap_projects/tree/main/backend_projects/weather-api) (backend) : https://roadmap.sh/projects/weather-api-wrapper-service
 <hr>
 
 ### Checkpoint projects
