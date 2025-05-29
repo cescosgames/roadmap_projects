@@ -1,9 +1,7 @@
 # Weather API (backend)
 
 This is a weather API backend project from [roadmap.sh Weather API](https://roadmap.sh/projects/weather-api-wrapper-service). This project has a very basic frontend that
-uses our backend routes to fetch weather data from visual crossing API. *NOTE* this project was supposed to implement Redis caching, but it is not currently fully implemented.
-This is due to issues on installation of Redis locally, but theoretically, the Redis caching should work following my notes in redisCache.js which connects to our
-weather controller which handles our backend calls.
+uses our backend routes to fetch weather data from visual crossing API. It also uses a local instance of redis for caching information, avoiding unncessary API calls.
 <br>
 <br>
 
@@ -14,8 +12,15 @@ weather controller which handles our backend calls.
 - axios for fetch requests
 - dotenv for loading environment variables
 - express-rate-limit for limiting amount of requests (1 per minute current testing setup)
-- redis for nodejs redis functionality
+- redis npm for nodejs redis functionality
 - HTML, CSS, and JS for frontend functionality
+- redis cli for running redis
+
+## Demo Images
+<br> Basic UI to use the API <br>
+<img width="559" alt="Screenshot 2025-05-29 at 11 23 27" src="https://github.com/user-attachments/assets/a474de0a-5ead-4ac4-a83e-7786986eb654" />
+<br> Command line demonstrating initial call to API, then second call to Redis cache<br>
+<img width="376" alt="Screenshot 2025-05-29 at 11 23 44" src="https://github.com/user-attachments/assets/3a6e0f75-62a2-43f8-8e7d-ebe58e8c023e" />
 
 ## How To Run The Project
 
@@ -33,18 +38,24 @@ npm run dev
 ```
 4. Make sure to connect and have Redis running locally, or just use without Redis caching your call
 5. In your browser, navigate to local host 5173 or create a new .env file to store desired port and enter your city in the basic UI
+6. to make things quicker you can copy this env file with your information
+```
+PORT = your-port
+VC_WEATHER_KEY = your-key
+REDIS_PORT = your-redis-port
+```
 
 ## Features:
 
 Following the project guidelines, this project features...
 1. working with third party APIs
 2. using environment variables
-3. caching (sorta...)
+3. caching with redis
 4. rate limiting requests
 
 ## Lessons Learned:
-Since this project isn't yet fully completed until I install and test Redis, I will replace this section with an outline of my approach instead so a future attempt can
-use my approach or a new approach to tackle this project. You can also see various notes throughout the project on my approach and how it was made.
+Great introduction to the importance and implementation of caching information using a database like redis. Felt daunting at first but when you get into it it's really 
+quite straightforward. The rough outline below and comments throughout the project should cover most questions and the process. 
 
 ## The rough outline (so far)
 
@@ -53,4 +64,4 @@ use my approach or a new approach to tackle this project. You can also see vario
 3. create an axios fetch request in our router (that we will later move to its own controller) dont forget api key in the env! (install axios)
 4. now test the flow from frontend request to backend request to returning the weather (frontend GET to backend route, backend delegate to router, router process request and return to frontend)
 5. with the flow set up properly, set up rate limiting using express-rate-limit documentation (intall express rate limit - it's super straightforward!)
-6. *NOTE* I am unable to test Redis at the moment but in theory, redisCache.js should fetch and cache information correctly. It is currently not hooked up, but would connect to the weather controller.js following the comments in the files
+6. Last step was setting up redis locally which is easier than you think. Once redis is set up locally, it's just a matter of connecting to it and acessing/writing your information to your local redis cache
