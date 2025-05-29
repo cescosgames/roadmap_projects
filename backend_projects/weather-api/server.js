@@ -22,8 +22,8 @@ const __dirname = path.dirname(__filename); // pass in our file name to get our 
 
 // our limiter middleware, from the express-rate-limit documentation, 'usage' - this is all you need! super simple
 const limiter = rateLimit({
-	windowMs: 60 * 1000, // 15 minutes
-	limit: 1, // limit each IP to 100 requests per `window` (here, per 15 minutes)
+	windowMs: 15 * 60 * 1000, // 15 minutes
+	limit: 100, // limit each IP to 100 requests per `window` (here, per 15 minutes)
 	standardHeaders: true, // return rate limit info in the `RateLimit-*` headers
 	legacyHeaders: false, // disable the `X-RateLimit-*` headers
 	message: { error: 'You have exceeded the rate limit. Try again in a minute.' }, // error message
